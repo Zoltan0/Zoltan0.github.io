@@ -1,0 +1,79 @@
+@font-face {
+        font-family: "Oswald";
+        src: url("fonts/Oswald/Oswald-Regular.ttf");
+        font-weight: 500;
+}
+
+@font-face {
+    font-family: "Oswald-light";
+    src: url("fonts/Oswald/Oswald-Light.ttf");
+    font-weight: 200;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+html{
+    text-transform: uppercase;
+}
+h1{
+    color:blue;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+#bio-header {
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#skillsHeader {
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content {
+    color: grey;
+    font-family: "Oswald-light";
+    font-size: 24px;
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: normal;
+    font-weight: normal;
+    margin: 40px;
+    border:solid 1px blue;
+    padding: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-div {
+    background-color: lightblue;
+}
+
+.light {
+    background-color: aliceblue;
+}
+p {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align:right;
+    text-transform: lowercase;
+    line-height: normal;
+    font-weight: normal;
+}
+img {
+    width: 20.6%;
+    box-shadow: 3px 3px 4px black;
+    margin: 2%;
+}
+
+#img-1 {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: ;
+    visibility: ;
+
+}
