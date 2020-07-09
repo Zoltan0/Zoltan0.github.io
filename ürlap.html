@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürlap</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Személyes adatok:</legend>
+                <div>
+                    <label for="name">Név:*</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email cím:*</label>
+                    <input id="email" name="email" type="text" required>
+                </div>
+                <div>
+                    <label for="addres">Cím:*</label>
+                    <input id="addres" name="addres" type="text" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés:*</label>
+                    <input id="comment" name="comment" type="text" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Termék adatai</legend>
+                <span>Extra feltét:</span>
+                <div>
+                    <input id="nothing" name="extra" type="radio" value="0">
+                    <label for="nothing">Nem kér</label>
+                </div>
+                <div>
+                    <input id="cheese" name="extra" type="radio" value="300">
+                    <label for="cheese">Feltét 1</label>
+                </div>
+                <div>
+                    <input id="double-cheese" name="extra" type="radio" value="600">
+                    <label for="double-cheese">Feltét 2</label>
+                </div>
+                <div>
+                    <input id="valami-más" name="extra" type="radio" value="1500">
+                    <label for="valami-més">Feltét 3</label>
+                </div>
+                <div>
+                    <label for="sauce">Szósz:</label>
+                    <select name="sauce" id="sauce">
+                        <option value="0" selected>Szósz 1</option>
+                        <option value="100">Szósz 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Mennyiség</label>
+                    <input id="quantity" name="quantity" type="number" min="1" max="10" value>
+                </div>
+            </fieldset>
+            <div>
+                <input type="button" value="Rendelés leadás"> Ár: <span>1200</span> Ft
+            </div>
+
+
+    </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

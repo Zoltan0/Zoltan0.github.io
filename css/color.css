@@ -1,0 +1,43 @@
+#colorDiv {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#colorDiv1 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(100, 50, 80);
+}
+#colorDiv2 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:rgba(0, 0, 255, 0.15);
+}
+/*
+2-es számrendszer:01
+3-as számrendszer:012
+10-es számrendszer:0123456789
+16-os számrendszer:012346789ABCDEF
+
+255 (10) = 2*100+5*10+5*1
+FF (16) = F*16+F*1 (15*16+15*1)
+
+rgb(255, 255, 255) = #FFFFFF
+*/
+
+html {
+    background-color:#c0c0c0;
+    background-image: url("/IMG/Áramkör.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+/*
+Így is lehet:
+html {
+    backgroung: url("/IMG/Áramkör.jpg") lefr no-repeat;
+}
+*/
