@@ -20,3 +20,46 @@ function showSumPrice(price, amountNumber) {
     }
     
 }
+// add help Text.
+let helpText = document.createElement("small");
+helpText.className = "form-text text-muted";
+helpText.innerHTML = "Adjam meg a feltéteket!";
+
+let parent = document.querySelector("div.form-group:nth-child(1)");
+parent.appendChild(helpText);
+//Delet
+parent.removeChild(helpText);
+
+
+//window event
+let sendButton = document.querySelector("form .btn.btn-primary");
+/*
+sendButton.onclick = function() {
+    alert("Hello JS!");
+}
+*/
+/*
+sendButton.addEventListener("click", function() {
+    alert("Hello JS!");
+});
+*/
+//Ürlap események
+
+let orderForm = document.querySelector("#orderForm");
+orderForm.addEventListener("submit", function(ev) {
+    ev.prevenDefault();
+    
+    let inputs = this.querySelectorAll("input");
+    let values = {};
+    for (let i=0; i < inputs.leght; i++) {
+        values[inputs[i].name] = inputs[i].value;
+    }
+
+    console.log("values");
+});
+
+
+
+
+
+
