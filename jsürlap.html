@@ -11,34 +11,42 @@
 <div class="continer">
     <div class="row">
         <div class="col-3"></div>
-            <div class="col-6">
-                <h3>Hamburger rendelés</h3>
-                <form id="orderForm" action="">
-                    <div class="form-group">
-                        <label for="">Feltét</label>
-                        <input type="text" name="input-top" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Mennyiség</label>
-                        <input type="number" name="amount-input" class="form-control" value="1">
-                        <small class="form-text text-muted">
-                            Minimun 1, maximum 10 db
-                        </small>
-                    </div>
-                    <div class="form-group">
-                        Fizetendő: <span class="show-amount">0</span>Ft
-                    </div>
-                    <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
-                </form>
+        <div class="col-6">
+            <h3>Hamburger rendelés</h3>
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>Kedves vásárlónk!</strong> 
+                A rendeléshez kérjük töltse ki az űrlapot.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="col-3"></div>
+            <form id="orderForm" action="">
+                <div class="form-group">
+                    <label for="">Feltét</label>
+                    <select id="topInput" name="input-top" class="form-control">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Mennyiség</label>
+                    <input type="number" name="amount-input" class="form-control" value="1">
+                    <small class="form-text text-muted">
+                        Minimun 1, maximum 10 db
+                    </small>
+                </div>
+                <div class="form-group">
+                    Fizetendő: <span class="show-amount">0</span>Ft
+                </div>
+                <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+            </form>
+        </div>
+        <div class="col-3"></div>
     </div>
 </div>
 
 
 <script src="/js/main.js"></script>
 <!-- <script src="/js/scope.js"></script> -->
-<script src="/js/algo.js"></script>
+<!-- <script src="/js/algo.js"></script> -->
 
 </body>
 
